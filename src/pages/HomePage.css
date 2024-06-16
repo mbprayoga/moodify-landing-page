@@ -1,0 +1,47 @@
+.Home {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.Home-header {
+  background-color: #00adb5;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.Home-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.Home-main {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.Section-title {
+  margin-bottom: 10px;
+}
+
+.Services {
+  margin-top: 20px;
+}
+
+.Service {
+  margin-bottom: 20px;
+}
+
+.Service h3 {
+  margin-bottom: 10px;
+}
+
+/* Example styling for strong tags within paragraphs */
+p strong {
+  font-weight: bold;
+  color: #F4CE14; /* LinkedIn blue */
+}
