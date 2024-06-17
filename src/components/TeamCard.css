@@ -1,28 +1,59 @@
 .team-card {
-    display: flex;
-    align-items: center;
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
-  }
-  
-  .team-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    margin-right: 20px;
-  }
-  
-  .team-info {
-    flex: 1;
-  }
-  
-  .team-info p {
-    margin: 5px 0;
-  }
-  
-  .team-info a {
-    text-decoration: none;
-    color: #0077b5; /* LinkedIn blue */
-  }
-  
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+  flex-direction: column;
+}
+
+.image-container {
+  position: relative;
+}
+
+.profile-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.linkedin-link {
+  position: absolute;
+  bottom: 18px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.linkedin-icon {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+.team-info {
+  flex: 1;
+}
+
+.team-info p {
+  margin: 5px 0;
+}
+
+.team-info strong {
+  font-size: 1.2em;
+  color: #333;
+}
+
+.team-info span {
+  font-size: 1em;
+  color: #666;
+}
+
+.team-link a {
+  text-decoration: none;
+  color: #0077b5;
+}

@@ -1,4 +1,4 @@
-import React from "react";
+import React , { useState } from "react";
 import "./App.css";
 import {
   BrowserRouter as Router,
@@ -16,20 +16,32 @@ import Bangkit from "./assets/Bangkit.png";
 import moodify from "./assets/moodify.png";
 
 function App() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <div className="App">
       <Router>
         <header className="App-header">
           <Link to="/home" className="App-logo-link">
-            <img src={moodify} alt="moodify Logo" className="App-logo" />
+            <img src={moodify} alt="Moodify Logo" className="App-logo" />
           </Link>
-          <nav className="App-nav">
-            <Link to="/home" className="App-link">
+          <button className="App-menu-toggle" onClick={toggleMenu}>
+            &#9776;
+          </button>
+          <nav className={`App-nav ${isMenuOpen ? "open" : ""}`}>
+            <Link to="/home" className="App-link" onClick={toggleMenu}>
               Home
             </Link>
-            <Link to="/about" className="App-link">
+            <Link to="/about" className="App-link" onClick={toggleMenu}>
               About Us
             </Link>
+            <button className="App-menu-close" onClick={toggleMenu}>
+            &#10006;
+          </button>
           </nav>
         </header>
         <main className="App-main">
@@ -54,9 +66,7 @@ function App() {
             </p>
           </div>
           <div>
-            <p className="App-footer-copyright">
-              &copy; 2024 Moodify.
-            </p>
+            <p className="App-footer-copyright">&copy; 2024 Moodify.</p>
           </div>
         </footer>
       </Router>

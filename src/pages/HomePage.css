@@ -3,45 +3,187 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
 }
 
 .Home-header {
   background-color: #00adb5;
   color: white;
-  padding: 10px;
+  padding: 1.5vw;
   display: flex;
-  align-items: center;
+  justify-content: space-around;
+  align-items: center; /* Center vertically */
+  width: 100%; /* Ensure header stretches across the screen */
+}
+
+.Home-header-desc {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  max-width: 50%;
+  padding: 2vw;
+}
+
+.Home-header-desc p {
+  text-align: justify;
+  font-size: 1.8vw; /* Responsive font size */
 }
 
 .Home-header h1 {
-  font-size: 2.5rem;
-  margin-bottom: 10px;
+  font-size: 3.5vw; /* Responsive font size */
+  margin-bottom: 1vw;
 }
 
 .Home-main {
   display: flex;
   flex-direction: column;
-  padding: 20px;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
 }
 
 .Section-title {
-  margin-bottom: 10px;
+  margin-bottom: 1vw;
+  text-align: center;
+  font-size: 3vw;
 }
 
 .Services {
-  margin-top: 20px;
+  margin-top: 2vw;
+  text-align: justify;
 }
 
-.Service {
-  margin-bottom: 20px;
+.Service-desc {
+  max-width: 50%;
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  text-align: justify;
 }
 
-.Service h3 {
-  margin-bottom: 10px;
+.Service-desc h3 {
+  font-size: 2vw;
 }
 
-/* Example styling for strong tags within paragraphs */
+.Service-desc p {
+  font-size: 1.5vw;
+}
+
+.Service-left {
+  margin-bottom: 2vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Service-left h3 {
+  margin-bottom: 1vw;
+}
+
+.Service-right {
+  margin-bottom: 2vw;
+  text-align: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.Service-right h3 {
+  margin-bottom: 1vw;
+}
+
+.Service-img {
+  height: 40vw; /* Responsive image height */
+}
+
 p strong {
   font-weight: bold;
-  color: #F4CE14; /* LinkedIn blue */
+  color: #f4ce14;
+}
+
+.About-Moodify {
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  background-color: #eeeeee;
+}
+
+.About-Moodify p {
+  font-size: 1.5vw;
+}
+
+@media (max-width: 768px) {
+  .Home-header {
+    flex-direction: column-reverse;
+    padding: 5vw;
+  }
+
+  .Home-header-desc {
+    max-width: 100%;
+    padding: 5vw;
+    text-align: center;
+  }
+
+  .Home-header-desc p {
+    font-size: 4vw; /* Adjust font size for mobile */
+  }
+
+  .Home-header h1 {
+    font-size: 7vw; /* Adjust font size for mobile */
+    margin-bottom: 3vw;
+  }
+
+  .Service-desc {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .Service-left {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .Service-right {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .Service-left h3,
+  .Service-right h3 {
+    font-size: 5vw; /* Adjust font size for mobile */
+  }
+
+  .Service-desc p,
+  .About-Moodify p {
+    font-size: 4vw; /* Adjust font size for mobile */
+  }
+
+  .Service-img-container {
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center;
+  }
+
+  .Service-img {
+    height: auto; /* Ensure image scales correctly */
+    width: 50%; /* Adjust width for mobile */
+  }
+
+  .Section-title {
+    font-size: 5vw; /* Adjust font size for mobile */
+    text-align: center;
+  }
+
+  .Services {
+    margin-top: 5vw;
+    padding: 5vw;
+    align-items: center;
+  }
+
+  .About-Moodify {
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
 }

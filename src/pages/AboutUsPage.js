@@ -51,20 +51,18 @@ function AboutUsPage() {
     },
   ];
   return (
-    <div className="App">
-      <header className="App-header">
+    <div className="About">
+      <header className="About-header">
         <h1>About Us</h1>
         <p>
           Our mission is to promote mental well-being through accessible
-          technology in daily life. We believe in providing practical resources
-          and support that make it easier for everyone to prioritize and enhance
-          their mental health.
+          technology in daily life. 
         </p>
       </header>
       <body>
-        <div>
+        <div className="team-title">
           <h2>Our Team</h2>
-          <div>
+          <div className="team-cards">
             {team.map((member, index) => (
               <TeamCard
                 key={index}
