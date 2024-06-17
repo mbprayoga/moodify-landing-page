@@ -3,42 +3,48 @@ import "./AboutUsPage.css";
 
 import TeamCard from "../components/TeamCard.js";
 
-import placeholder from "../assets/placeholder.png";
+import placeholder from "../assets/placeholder.jpg";
+import Asnawi from "../assets/Asnawi.jpeg";
+import Sultan from "../assets/Sultan.jpeg";
+import Fachry from "../assets/Fachry.jpeg";
+import Arya from "../assets/Arya.jpeg";
+import Bintang from "../assets/Bintang.jpg";
+import Jauza from "../assets/Jauza.jpeg"
 
 function AboutUsPage() {
   const team = [
     {
-      img: placeholder,
+      img: Asnawi,
       link: "https://www.linkedin.com/in/asnawialamsyah/",
       name: "Asnawi Alamsyah",
       path: "Machine Learning Engineer",
     },
     {
-      img: placeholder,
+      img: Sultan,
       link: "https://www.linkedin.com/in/sultanfahdmby/",
       name: "Sultan Fahd Muhammad Bahruddin Yusuf",
       path: "Machine Learning Engineer",
     },
     {
-      img: placeholder,
+      img: Fachry,
       link: "https://www.linkedin.com/in/fachrysyifaananda/",
       name: "Fachry Syifa Ananda",
       path: "Machine Learning Engineer",
     },
     {
-      img: placeholder,
+      img: Arya,
       link: "https://www.linkedin.com/in/fitriawanaryanugraha/",
       name: "Fitriawan Arya Nugraha",
       path: "Backend & Cloud Engineer",
     },
     {
-      img: placeholder,
+      img: Bintang,
       link: "https://www.linkedin.com/in/m-bintang-prayoga-utama-65738523a/",
       name: "M. Bintang Prayoga Utama",
       path: "Backend & Cloud Engineer",
     },
     {
-      img: placeholder,
+      img: Jauza,
       link: "https://www.linkedin.com/in/jauza-aryazuhdi-alaudin1403/",
       name: "Jauza Aryazuhdi Alaudin",
       path: "Mobile App Developer",

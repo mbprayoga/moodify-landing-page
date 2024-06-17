@@ -3,18 +3,18 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .Home-header {
   background-color: #00adb5;
   color: white;
-  padding: 1.5vw;
   display: flex;
   justify-content: space-around;
-  align-items: center; /* Center vertically */
-  width: 100%; /* Ensure header stretches across the screen */
+  align-items: center; 
+  width: 100%; 
+  padding-bottom: 0.5em;
 }
 
 .Home-header-desc {
@@ -22,34 +22,34 @@
   align-items: left;
   flex-direction: column;
   max-width: 50%;
-  padding: 2vw;
+  padding: 1em;
 }
 
 .Home-header-desc p {
   text-align: justify;
-  font-size: 1.8vw; /* Responsive font size */
+  font-size: 1.8em; 
 }
 
 .Home-header h1 {
-  font-size: 3.5vw; /* Responsive font size */
-  margin-bottom: 1vw;
+  font-size: 3.5em; 
+  margin-bottom: 1em;
 }
 
 .Home-main {
   display: flex;
   flex-direction: column;
-  justify-content: center; /* Center vertically */
-  align-items: center; /* Center horizontally */
+  justify-content: center; 
+  align-items: center; 
 }
 
 .Section-title {
-  margin-bottom: 1vw;
+  margin-bottom: 0.5em;
   text-align: center;
-  font-size: 3vw;
+  font-size: 3em;
 }
 
 .Services {
-  margin-top: 2vw;
+  margin-top: 0.5em;
   text-align: justify;
 }
 
@@ -62,15 +62,15 @@
 }
 
 .Service-desc h3 {
-  font-size: 2vw;
+  font-size: 2em;
 }
 
 .Service-desc p {
-  font-size: 1.5vw;
+  font-size: 1.5em;
 }
 
 .Service-left {
-  margin-bottom: 2vw;
+  margin-bottom: 1.5em;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -78,11 +78,11 @@
 }
 
 .Service-left h3 {
-  margin-bottom: 1vw;
+  margin-bottom: 1em;
 }
 
 .Service-right {
-  margin-bottom: 2vw;
+  margin-bottom: 1.5em;
   text-align: left;
   display: flex;
   flex-direction: row;
@@ -91,11 +91,11 @@
 }
 
 .Service-right h3 {
-  margin-bottom: 1vw;
+  margin-bottom: 1em;
 }
 
 .Service-img {
-  height: 40vw; /* Responsive image height */
+  height: 38em;
 }
 
 p strong {
@@ -105,34 +105,36 @@ p strong {
 
 .About-Moodify {
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 3%;
   background-color: #eeeeee;
+  margin: 0;
 }
 
 .About-Moodify p {
-  font-size: 1.5vw;
+  font-size: 1.5em;
 }
 
 @media (max-width: 768px) {
   .Home-header {
     flex-direction: column-reverse;
-    padding: 5vw;
+    padding: 0;
   }
 
   .Home-header-desc {
     max-width: 100%;
-    padding: 5vw;
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+    padding-bottom: 1.0em;
     text-align: center;
   }
 
   .Home-header-desc p {
-    font-size: 4vw; /* Adjust font size for mobile */
+    font-size: 1.5em; 
+    margin-bottom: 1.0em;
   }
 
   .Home-header h1 {
-    font-size: 7vw; /* Adjust font size for mobile */
-    margin-bottom: 3vw;
+    font-size: 2.5em; 
   }
 
   .Service-desc {
@@ -152,38 +154,41 @@ p strong {
 
   .Service-left h3,
   .Service-right h3 {
-    font-size: 5vw; /* Adjust font size for mobile */
+    font-size: 2em; 
   }
 
   .Service-desc p,
   .About-Moodify p {
-    font-size: 4vw; /* Adjust font size for mobile */
+    font-size: 1.5em; 
   }
 
   .Service-img-container {
     display: flex;
-    justify-content: center; /* Center items horizontally */
+    justify-content: center; 
     align-items: center;
+    padding: 0;
+    margin: 0;
   }
 
   .Service-img {
-    height: auto; /* Ensure image scales correctly */
-    width: 50%; /* Adjust width for mobile */
+    height: auto; 
+    width: 50%; 
   }
 
   .Section-title {
-    font-size: 5vw; /* Adjust font size for mobile */
+    font-size: 3em; 
     text-align: center;
   }
 
   .Services {
-    margin-top: 5vw;
-    padding: 5vw;
+    margin-top: 1em;
+    padding-left: 1.0em;
+    padding-right: 1.0em;
     align-items: center;
   }
 
   .About-Moodify {
-    padding-left: 5vw;
-    padding-right: 5vw;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 }

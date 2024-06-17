@@ -25,7 +25,6 @@ function HomePage() {
       </header>
       <main className="Home-main">
         <section className="About-Moodify">
-          <h2 className="Section-title">Moodify</h2>
           <p>
             Moodify is a <strong>user-friendly</strong> tool designed to{" "}
             <strong>track your daily mood</strong> offering tailored guidance
