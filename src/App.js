@@ -66,7 +66,7 @@ function App() {
             </p>
           </div>
           <div>
-            <p className="App-footer-copyright">&copy; 2024 Moodify.</p>
+            <p className="App-footer-copyright">&copy; Moodify 2024.</p>
           </div>
         </footer>
       </Router>
