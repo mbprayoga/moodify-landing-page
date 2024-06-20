@@ -115,12 +115,16 @@
 }
 
 @media (max-width: 768px) {
+  .App-header {
+    gap:15%;
+  }
+  
   .App-menu-toggle {
-    display: block; /* Display menu toggle on smaller screens */
+    display: block; 
   }
 
   .App-menu-close {
-    display: block; /* Display menu toggle on smaller screens */
+    display: block; 
   }
 
   .App-nav {
@@ -159,5 +163,17 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .App-header {
+      gap: 2%;
+  }
+}
+
+@media (max-width: 320px) {
+  .App-header {
+      gap: 0;
   }
 }
