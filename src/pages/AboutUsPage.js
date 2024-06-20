@@ -3,13 +3,13 @@ import "./AboutUsPage.css";
 
 import TeamCard from "../components/TeamCard.js";
 
-import placeholder from "../assets/placeholder.jpg";
 import Asnawi from "../assets/Asnawi.jpeg";
 import Sultan from "../assets/Sultan.jpeg";
 import Fachry from "../assets/Fachry.jpeg";
 import Arya from "../assets/Arya.jpeg";
 import Bintang from "../assets/Bintang.jpg";
 import Jauza from "../assets/Jauza.jpeg"
+import Javier from "../assets/Javier.jpg"
 
 function AboutUsPage() {
   const team = [
@@ -50,7 +50,7 @@ function AboutUsPage() {
       path: "Mobile App Developer",
     },
     {
-      img: placeholder,
+      img: Javier,
       link: "https://www.linkedin.com/in/m-javier-rasyadi-a95371300/",
       name: "M Javier Rasyadi",
       path: "Mobile App Developer",
