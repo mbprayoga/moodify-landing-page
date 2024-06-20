@@ -22,6 +22,11 @@ function App() {
     setIsMenuOpen(!isMenuOpen);
   };
 
+  const handleDownload = () => {
+    //const fileUrl = "";
+    //window.open(fileUrl);
+  };
+
   return (
     <div className="App">
       <Router>
@@ -39,6 +44,9 @@ function App() {
             <Link to="/about" className="App-link" onClick={toggleMenu}>
               About Us
             </Link>
+            <button className="App-white-button" onClick={handleDownload}>
+              Try Moodify!
+            </button>
             <button className="App-menu-close" onClick={toggleMenu}>
             &#10006;
           </button>
