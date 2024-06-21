@@ -23,8 +23,8 @@ function App() {
   };
 
   const handleDownload = () => {
-    //const fileUrl = "";
-    //window.open(fileUrl);
+    const fileUrl = "https://storage.googleapis.com/moodify-bucket-capstone/apk/MoodifyApp.zip";
+    window.open(fileUrl);
   };
 
   return (
